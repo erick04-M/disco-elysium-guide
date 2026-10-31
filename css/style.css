@@ -1,0 +1,63 @@
+
+body {
+    margin: 0;
+    color: #F4EAD6;
+    background: linear-gradient(to bottom, #315665, #B98761, #E7D8B7, #343941);
+}
+
+header {
+    background: url("../images/city-skyline.jpg") left top / cover no-repeat;
+    min-height: 350px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    animation: bannerMove 10s ease-in-out infinite alternate;
+}
+
+@keyframes bannerMove {
+    from { background-position: left top; }
+    to { background-position: right bottom; }
+}
+
+nav, main, footer {
+    background: transparent;
+}
+
+nav a, footer, footer a {
+    color: #F4EAD6;
+}
+
+main {
+    color: #252C34;
+    padding: 20px;
+}
+
+.character {
+    background: #E7D8B7;
+    color: #252C34;
+}
+
+.character img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Character Compendium Page */
+
+.characters-page {
+    background: #343941;
+}
+
+.characters-page main {
+    color: #F4EAD6;
+}
+
+.characters-page .character {
+    background: #E7D8B7;
+    color: #252C34;
+    padding: 15px;
+    margin-bottom: 20px;
+}
